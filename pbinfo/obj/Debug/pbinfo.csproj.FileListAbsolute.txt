@@ -1,0 +1,7 @@
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\bin\Debug\pbinfo.exe.config
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\bin\Debug\pbinfo.exe
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\bin\Debug\pbinfo.pdb
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\obj\Debug\pbinfo.csproj.AssemblyReference.cache
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\obj\Debug\pbinfo.csproj.CoreCompileInputs.cache
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\obj\Debug\pbinfo.exe
+C:\Users\anndr\Documents\C#\OOP\Abstractizarea\pbinfo\pbinfo\obj\Debug\pbinfo.pdb

@@ -1,0 +1,11 @@
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\bin\Debug\pbinfoApp.exe.config
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\bin\Debug\pbinfoApp.exe
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\bin\Debug\pbinfoApp.pdb
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.csproj.AssemblyReference.cache
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.FrmHome.resources
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.Mockupuri.MockupHome.resources
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.Properties.Resources.resources
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.csproj.GenerateResource.cache
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.csproj.CoreCompileInputs.cache
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.exe
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.pdb
