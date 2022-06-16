@@ -1,0 +1,8 @@
+Subprogramul numarare are patru parametri:
+-n, prin care primeste un numar natural (2<=n<=20)
+-m, prin care primeste un numar natural (2<=m<=20)
+-a, prin care primeste un tablou unidimensional care memoreaza un sir de n numere naturale, fiecare cu cel mult 4 cifre
+-b, prin care primeste un tablou unidimensional care memoreaza un sir de m numere naturale, fiecare cu cel mult 4 cifre
+
+Subprogramul returneaza numarul de elemente din tabloul a, care sunt strict mai mici decat toate elementele din tabloul b. Scrieti in limbajul C/C++ definitia completa a subprogramului numarare.
+Exemplu: daca n=7, m=8, a=(1,4,5,3,82,6,2), b=(56,6,34,23,8,9,12,18) atunci, dupa apel, subprogramul va returna valoarea 5 (valorile 1,4,5,3,2 din tabloul a sunt strict mai mici decat toate valorile din tabloul b).

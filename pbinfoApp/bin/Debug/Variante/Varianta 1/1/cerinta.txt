@@ -1,0 +1,10 @@
+Se considera declararile de mai jos, in care variabila e memoreaza numele si data nasterii unui elev. Scrieti o secventa de instructiuni C/C++ care citeste de la tastatura informatiile despre un elev in variabila e si afiseaza numele elevului daca anul nasterii este egal cu 2000 sau data nasterii in caz contrar, informatiile din data se afiseaza pe aceeasi linie separate printr-un spatiu.
+
+struct data
+{int zi, luna, an;};
+struct elev
+{
+	char nume[21];
+	data dn;
+}
+elev e;
