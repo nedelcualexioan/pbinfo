@@ -5,8 +5,7 @@ namespace pbinfoApp.Panels
 {
     public class ViewHome : Panel
     {
-        private Panel pnlTitleBar;
-        private Label lblTItle;
+        private TitleBar pnlTitleBar;
 
         private PictureBox pctLogo;
         private Label lblJoke;
@@ -18,33 +17,12 @@ namespace pbinfoApp.Panels
             this.Dock = DockStyle.Fill;
             this.BackColor = Color.White;
 
-            Initialize(par as FrmHome);
-
+            Initialize();
         }
 
-        private void Initialize(FrmHome home)
+        private void Initialize()
         {
-            pnlTitleBar = new Panel
-            {
-                Parent = this,
-                Location = new Point(0,0),
-                Size = new Size(this.Width, 80),
-                Dock = DockStyle.Top,
-                BackColor = Color.FromArgb(0, 150, 136)
-            };
-
-            lblTItle = new Label
-            {
-                AutoSize = true,
-                Anchor = AnchorStyles.None,
-                Font = new Font("Lucida Sans Unicode", 15.75f, FontStyle.Regular),
-                ForeColor = Color.White,
-                Location = new Point(610, 27),
-                TabIndex = 0,
-                 Text = "HOME",
-                TextAlign = ContentAlignment.MiddleCenter
-            };
-            pnlTitleBar.Controls.Add(lblTItle);
+            pnlTitleBar = new TitleBar(this);
 
             pctLogo = new PictureBox
             {

@@ -17,7 +17,7 @@ namespace pbinfoApp
 
         private Menu pnlMenu;
         private ViewHome pnlHome;
-
+        private ViewProblems pnlProblems;
         public FrmHome()
         {
             InitializeComponent();
@@ -25,18 +25,37 @@ namespace pbinfoApp
             this.Size = new Size(1092, 620);
             this.Text = "PbInfo";
 
+            
+
+            pnlMenu = new Menu(this);
+            pnlHome = new ViewHome(this);
+            pnlProblems = new ViewProblems(this);
+
             foreach (Control c in this.Controls)
             {
                 c.Hide();
             }
 
-            pnlMenu = new Menu(this);
-            pnlHome = new ViewHome(this);
-
             pnlMenu.Show();
-            pnlHome.Show();
-            
+            pnlProblems.Show();
 
+            pnlMenu.menuClick += btnClick;
+        }
+
+        private void btnClick(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+
+            if (button.Text.Contains("Home"))
+            {
+                pnlProblems.Hide();
+                pnlHome.Show();
+            }
+            else
+            {
+                pnlHome.Hide();
+                pnlProblems.Show();
+            }
         }
 
         private void FrmHome_Load(object sender, EventArgs e)

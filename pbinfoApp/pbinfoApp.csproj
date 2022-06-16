@@ -52,6 +52,12 @@
     <Compile Include="FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mockupuri\BasicMockup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockupuri\BasicMockup.Designer.cs">
+      <DependentUpon>BasicMockup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mockupuri\MockupHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,13 +67,22 @@
     <Compile Include="Panels\Menu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Panels\TitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Panels\ViewHome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\ViewProblems.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockupuri\BasicMockup.resx">
+      <DependentUpon>BasicMockup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mockupuri\MockupHome.resx">
       <DependentUpon>MockupHome.cs</DependentUpon>

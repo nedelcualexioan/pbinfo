@@ -9,3 +9,4 @@ C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.csproj.GenerateRes
 C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.csproj.CoreCompileInputs.cache
 C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.exe
 C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.pdb
+C:\Users\anndr\Documents\pbinfo\pbinfoApp\obj\Debug\pbinfoApp.Mockupuri.BasicMockup.resources

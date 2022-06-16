@@ -26,5 +26,10 @@ namespace pbinfoApp.Mockupuri
         {
             
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+                
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace pbinfoApp.Panels
         private Button btnHome;
         private Button btnProblems;
 
+        public event EventHandler menuClick;
+
         public Menu(Form par)
         {
             this.Parent = par;
@@ -107,6 +109,11 @@ namespace pbinfoApp.Panels
             {
                 EnableButton(btnProblems);
                 DisableButton(btnHome); 
+            }
+
+            if (menuClick != null)
+            {
+                menuClick(sender, null);
             }
         }
 
