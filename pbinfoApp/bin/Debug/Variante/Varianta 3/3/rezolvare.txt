@@ -1,0 +1,38 @@
+void stergereLinie(int a[100][100], int& n, int m, int lin) {
+	for (int i = lin; i < n - 1; i++) {
+		for (int j = 0; j < m; j++) {
+			a[i][j] = a[i + 1][j];
+		}
+	}
+	n--;
+}
+
+void stergereCol(int a[100][100], int n, int& m, int col) {
+	for (int j = col; j < m - 1; j++) {
+		for (int i = 0; i < n; i++) {
+			a[i][j] = a[i][j + 1];
+		}
+	}
+	m--;
+}
+
+void afisareMa(int a[100][100], int n, int m) {
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+
+void solutie() {
+	int m[100][100] = { {1,2,3,4,5},{6,7,8,9,4},{3,4,5,6,7},{3,2,3,4,5},{6,5,7,8,9} };
+	int n = 5;
+
+	int mijl = n / 2;
+
+	stergereLinie(m, n, n, mijl);
+	int col = n + 1;
+	stergereCol(m, n, col, mijl);
+
+	afisareMa(m, n, col);

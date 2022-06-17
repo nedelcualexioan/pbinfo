@@ -1,0 +1,3 @@
+Scrieti un program C/C++ care citeste de la tastatura trei numere naturale n, m si k. Programul afiseaza in fisierul bac.txt numere naturale cu exact k cifre care sunt divizibile atat cu n cat si cu m (1<=n, m<=10^9, 1<=k<=9).
+
+Exemplu:daca n = 15, m = 10, k = 2, atunci in fisier se vor afisa numerele 30 60 90

@@ -1,0 +1,13 @@
+Se considera declararile de mai jos, in care variabila p memoreaza numarul de varfuri si coordonatele carteziene ale varfurilor unui poligon convex, variabila i este de tip int. Scrieti o secventa de instructiuni C/C++ care inlocuind punctele de suspensie citeste de la tastatura coordonatele varfurilor poligonului.
+
+struct punct
+{ int x; int y; };
+struct poligon
+{
+	int nr_vf;
+	punct vf[20];
+}p;
+
+cin >> p.nr_vf;
+for(i=0;i<p.nr_vf;i++)
+	..................

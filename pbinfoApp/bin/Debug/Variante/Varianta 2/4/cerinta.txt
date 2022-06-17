@@ -1,0 +1,6 @@
+Subprogramul numarare are doi parametri:
+-a, prin care primeste un numar natural (2<=a<=20000)
+-b, prin care primeste un numar natural (2<=b<=20000)
+Subprogramul returneaza numarul de valori din intervalul inchis determinat de a si b, care au exact 3 divizori. Scrieti in limbajul C/C++ definitia completa a subprogramului numarare.
+
+Exemplu: daca a=6 si b=36, subprogramul va returna 2.

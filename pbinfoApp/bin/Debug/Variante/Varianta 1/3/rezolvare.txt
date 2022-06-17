@@ -1,0 +1,44 @@
+int maxLength(char*sir){
+    char*aux=new char[100];
+    strcpy(aux,sir);
+
+    int max=INT_MIN;
+
+    char*p=strtok(aux,"#");
+
+    while(p!=NULL){
+        int aux=strlen(p);
+        if(aux>max)
+            max=aux;
+        p=strtok(NULL, "#");
+    }
+
+    return max;
+}
+
+void inv(char*sir){
+    int d=strlen(sir);
+    for(int i=0;i<d/2;i++){
+        int aux=sir[i];
+        sir[i]=sir[d-1-i];
+        sir[d-1-i]=aux;
+    }
+}
+
+char* invMaxLen(char*sir){
+    int max=maxLength(sir);
+    char*nou=new char[100]{};
+    char*p=strtok(sir,"#");
+    while(p!=NULL){
+        int dim=strlen(p);
+        if(dim==max){
+            inv(p);
+        }
+        strcat(nou,"#");
+        strcat(nou,p);
+
+        p=strtok(NULL, "#");
+    }
+    strcat(nou,"#");
+    return nou;
+}

@@ -1,0 +1,5 @@
+Subprogramul numar are doi parametri:
+-n, prin care primeste un numar natural (2<=n<=10^9);
+-m, prin care furnizeaza un numar natural (2<=m<=10^9) cel mai mare numar natural care se poate obtine folosind toate cifrele impare care apar in scrierea lui n, daca in scrierea lui n nu apar cifre impare atunci m va avea valoarea -1. Scrieti in limbajul C/C++ definitia comlpeta a subprogramului numar.
+
+Exemplu: Daca n=74317 atunci m=7731, daca n=246 atunci m=-1.

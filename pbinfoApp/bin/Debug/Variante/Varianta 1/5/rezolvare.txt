@@ -1,0 +1,36 @@
+void citire(int v[], int& d) {
+	ifstream f("bac.txt");
+
+	int x;
+	
+	while (f >> x) {
+		v[d] = x;
+		d++;
+	}
+}
+
+int pCif(int nr) {
+	while (nr >= 10)
+		nr /= 10;
+	return nr;
+}
+
+void afisare(int v[], int d) {
+	for (int i = 0; i < d; i++) {
+		cout << v[i] << " ";
+	}
+}
+
+int maxFazan(int v[], int d) {
+	int k = 0, max = -1;
+	for (int i = 0; i < d - 1; i++) {
+		if (v[i] % 10 == pCif(v[i + 1]))
+			k++;
+		else if (k != 0 && k + 1 > max) {
+			k++;
+			max = k;
+			k = 0;
+		}
+	}
+	return max;
+}

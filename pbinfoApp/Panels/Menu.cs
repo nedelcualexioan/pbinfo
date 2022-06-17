@@ -43,8 +43,9 @@ namespace pbinfoApp.Panels
                 Location = new Point(0, 140),
                 Padding = new Padding(12, 0, 0, 0),
                 Size = new Size(220, 60),
-                Text = "   Variante 2009",
-                TextImageRelation = TextImageRelation.ImageBeforeText
+                Text = "   Variante BAC",
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                Cursor = Cursors.Hand
             };
 
             btnHome = new Button
@@ -61,7 +62,8 @@ namespace pbinfoApp.Panels
                 Padding = new Padding(12, 0, 0, 0),
                 Size = new Size(220, 60),
                 Text = "   Home",
-                TextImageRelation = TextImageRelation.ImageBeforeText
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                Cursor = Cursors.Hand
             };
 
             pnlLogo = new Panel

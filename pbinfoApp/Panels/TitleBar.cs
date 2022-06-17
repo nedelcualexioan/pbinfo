@@ -14,11 +14,6 @@ namespace pbinfoApp.Panels
             set => this.lblTitle.Text = value;
         }
 
-        public Point TitleLocation
-        {
-            set => this.lblTitle.Location = value;
-        }
-
         public TitleBar(Control control)
         {
             this.Parent = control;
@@ -30,15 +25,17 @@ namespace pbinfoApp.Panels
 
             lblTitle = new Label
             {
-                AutoSize = true,
+                AutoSize = false,
+                Size = this.Size,
+                TextAlign = ContentAlignment.MiddleCenter,
                 Anchor = AnchorStyles.None,
                 Font = new Font("Lucida Sans Unicode", 15.75f, FontStyle.Regular),
                 ForeColor = Color.White,
-                Location = new Point(610, 27),
+                Location = new Point(0, 0),
                 TabIndex = 0,
-                Text = "HOME",
-                TextAlign = ContentAlignment.MiddleCenter
+                Text = "HOME"
             };
+
             this.Controls.Add(lblTitle);
 
         }

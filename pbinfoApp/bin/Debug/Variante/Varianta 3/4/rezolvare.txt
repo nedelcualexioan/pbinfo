@@ -1,0 +1,47 @@
+void vecCif(int v[], int& d, int x) {
+	while (x) {
+		int c = x % 10;
+		if (c % 2 == 1) {
+			v[d] = c;
+			d++;
+		}
+		x /= 10;
+	}
+}
+
+void sortare(int v[], int d) {
+	int flag;
+	do
+	{
+		flag = 0;
+		for (int i = 0; i < d - 1; i++) {
+			if (v[i] < v[i + 1]) {
+				swap(v[i], v[i + 1]);
+				flag = 1;
+			}
+		}
+	} while (flag == 1);
+}
+
+int nrVec(int v[], int d) {
+	int nou = 0;
+	for (int i = 0; i < d; i++) {
+		nou = nou * 10 + v[i];
+	}
+	return nou;
+}
+
+void numar(int n, int& m) {
+	int v[100], d = 0;
+	vecCif(v, d, n);
+
+	if (d == 0) {
+		m = -1;
+		return;
+	}
+
+	sortare(v, d);
+
+	m = nrVec(v, d);
+
+}

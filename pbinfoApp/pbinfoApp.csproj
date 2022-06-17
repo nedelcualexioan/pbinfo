@@ -73,6 +73,9 @@
     <Compile Include="Panels\ViewHome.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Panels\ViewProblem.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Panels\ViewProblems.cs">
       <SubType>Component</SubType>
     </Compile>

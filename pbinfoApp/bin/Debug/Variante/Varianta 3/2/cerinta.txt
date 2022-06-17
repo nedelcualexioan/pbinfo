@@ -1,0 +1,3 @@
+Ce se va afisa in urma executarii secventei de program urmatoare?
+char a[3][12] = {"bacalaureat", "la", "informatica"};
+cout << a[0] << ' ' << a[1][1] << ' ' << a[2][0];

@@ -1,0 +1,45 @@
+void citireVec(int& n, int& m, int a[], int b[]) {
+	ifstream f("bac.txt");
+
+	f >> n;
+	f >> m;
+
+	for (int i = 0; i < n; i++) {
+		f >> a[i];
+	}
+	for (int i = 0; i < m; i++) {
+		f >> b[i];
+	}
+}
+
+void afisare(int v[], int d) {
+	for (int i = 0; i < d; i++) {
+		cout << v[i] << " ";
+	}
+}
+
+int contorElem(int v[], int d, int x) {
+	int k = 0;
+	for (int i = 0; i < d; i++) {
+		if (v[i] == x)
+			k++;
+	}
+	return k;
+}
+
+int contorSir(int a[], int b[], int n, int m) {
+	int fin = contorElem(a, n, b[0]);
+
+	if (fin == 0)
+		return 0;
+
+	for (int i = 1; i < m; i++) {
+		int k = contorElem(a, n, b[i]);
+		if (k == 0)
+			return 0;
+		else if (k < fin)
+			fin = k;
+	}
+
+	return fin;
+}

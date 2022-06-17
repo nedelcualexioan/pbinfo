@@ -1,0 +1,16 @@
+int A[5][5];
+
+	
+int i, j;
+for (i = 1; i <= 5; i++) {
+	for (j = 1; j <= 5; j++) {
+		if (i + j < 6)
+			A[i][j] = 1;
+		else if (i + j == 6)
+			A[i][j] == 3;
+		else
+			A[i][j] = 2;
+		cout << A[i][j] << " ";
+	}
+	cout << endl;
+}

@@ -1,0 +1,27 @@
+struct Data {
+	int zi, luna, an;
+};
+
+struct Elev {
+	char nume[21];
+	Data dn;
+};
+
+string elev_mai_mare(Elev a, Elev b) {
+	if (a.dn.an < b.dn.an)
+		return a.nume;
+	else if (a.dn.an > b.dn.an)
+		return b.nume;
+	else {
+		if (a.dn.luna < b.dn.luna)
+			return a.nume;
+		else if (a.dn.luna > b.dn.luna)
+			return b.nume;
+		else {
+			if (a.dn.zi < b.dn.zi)
+				return a.nume;
+			else
+				return b.nume;
+		}
+	}
+}

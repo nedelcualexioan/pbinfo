@@ -14,8 +14,10 @@ namespace pbinfoApp.Panels
         {
             this.Parent = par;
             this.Location = new Point(220, 0);
-            this.Dock = DockStyle.Fill;
+            this.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             this.BackColor = Color.White;
+
+            this.Size = new Size(par.Width - 220, par.Height);
 
             Initialize();
         }
@@ -31,18 +33,21 @@ namespace pbinfoApp.Panels
                 Size = new Size(461, 83),
                 SizeMode = PictureBoxSizeMode.Zoom,
                 ImageLocation = Application.StartupPath + @"\Images\pbinfo5.png",
-                Location = new Point(400,181)
+                Top = 181
             };
+
+            pctLogo.Left = (pctLogo.Parent.Width - pctLogo.Width) / 2;
 
             lblJoke = new Label
             {
                 Parent = this,
                 Anchor = AnchorStyles.None,
-                AutoSize = true,
+                Location = new Point(0, pctLogo.Top + 100),
+                AutoSize = false,
+                Size = new Size(this.Width, 50),
                 Font = new Font("Lucida Sans Unicode", 15.75f, FontStyle.Regular),
-                Location = new Point(pctLogo.Left - 62, 295),
-                 Text= "De ce confundă programatorii Halloween-ul cu Crăciunul?\nPentru că Oct 31 = Dec 25",
-                 TextAlign = ContentAlignment.MiddleCenter
+                Text= "De ce confundă programatorii Halloween-ul cu Crăciunul?\nPentru că Oct 31 = Dec 25",
+                TextAlign = ContentAlignment.MiddleCenter
             };
         }
     }

@@ -1,0 +1,11 @@
+In secventa de instructiuni de mai jos variabilele i si j sunt de tip intreg, iar variabila A memoreaza un tablou bidimensional cu 5 linii si 5 coloane, numerotate de la 1 la 5. Elementele tabloului sunt numere intregi. Fara a utiliza alte variabile, scrieti una sau mai multe instructiuni care pot inlocui punctele de suspensie astfel incat in urma executarii secventei obtinute, tabloul memorat in variabila A sa aiba elementele din figura de mai jos.
+
+for(i=1;i<=5;i++)
+	for(j=1;j<=5;j++)
+		.............
+
+2 3 4 0 1
+3 4 0 1 2
+4 0 1 2 3
+0 1 2 3 4
+1 2 3 4 0

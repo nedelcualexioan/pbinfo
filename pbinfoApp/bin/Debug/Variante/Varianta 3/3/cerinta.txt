@@ -1,0 +1,14 @@
+Scrieti un program C/C++ care citeste de la tastatura un numar natural impar N (N apartine [2,50]) si elementele unui tablou bidimensional cu N linii si N coloane, numere intregi, apoi transforma tabloul in memorie, stergand o linie si o coloana, la mijlocul sau ca in exemplu. Tabloul obtinut se afiseaza pe ecran, linie cu linie, elementele fiecarei linii find separate prin cate un spatiu.
+
+Exemplu: Daca N=5 si tabloul este:
+1 2 3 4 5
+6 7 8 9 4
+3 4 5 6 7
+3 2 3 4 5
+6 5 7 8 9
+
+atunci se obtine tabloul urmator:
+1 2 4 5
+6 7 9 4
+3 2 4 5
+6 5 8 9

@@ -1,0 +1,17 @@
+int contorDiv(int nr) {
+	int k = 0;
+	for (int i = 1; i <= nr; i++) {
+		if (nr % i == 0)
+			k++;
+	}
+	return k;
+}
+
+int numarare(int a, int b) {
+	int k = 0;
+	for (int i = a; i <= b; i++) {
+		if (contorDiv(i) == 3)
+			k++;
+	}
+	return k;
+}

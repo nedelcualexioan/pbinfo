@@ -1,0 +1,16 @@
+bool isLess(int v[], int d, int x) {
+	for (int i = 0; i < d; i++) {
+		if (x >= v[i])
+			return false;
+	}
+	return true;
+}
+
+int numarare(int n, int m, int a[], int b[]) {
+	int k = 0;
+	for (int i = 0; i < n; i++) {
+		if (isLess(b, m, a[i]))
+			k++;
+	}
+	return k;
+}

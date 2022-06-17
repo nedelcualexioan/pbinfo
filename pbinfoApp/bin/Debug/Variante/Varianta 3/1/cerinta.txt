@@ -1,0 +1,10 @@
+Se considera declararile de mai jos, in care variabilele E1 si E2 memoreaza numele si data nasterii a doi elevi. Scrieti o secventa de instructiuni C/C++ care afiseaza numele elevului mai mare, stiind ca ambii elevi sunt nascuti in acelasi an, in zile diferite.
+
+struct data
+{ int zi, luna, an; };
+struct elev
+{
+	char nume[21];
+	data dn;
+}
+elev E1,E2;

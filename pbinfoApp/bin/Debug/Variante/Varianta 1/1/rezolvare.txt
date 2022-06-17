@@ -1,0 +1,23 @@
+struct data {
+	int zi, luna, an;
+};
+
+struct elev {
+	char nume[21];
+	data dn;
+};
+
+void solutie() {
+	elev e;
+
+	cout << "Introduceti numele: ";
+	cin.get(e.nume, 21);
+
+	cout << "Zi, luna, an nastere: ";
+	cin >> e.dn.zi >> e.dn.luna >> e.dn.an;
+
+	if (e.dn.an == 2000)
+		cout << e.nume;
+	else
+		cout << e.dn.zi << " " << e.dn.luna << " " << e.dn.an;
+}

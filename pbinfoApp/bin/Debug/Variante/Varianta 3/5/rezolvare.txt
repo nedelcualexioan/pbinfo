@@ -1,0 +1,6 @@
+void afisareNr(int n, int m, int k) {
+	for (int i = pow(10, k - 1); i < pow(10, k); i++) {
+		if (i % n == 0 && i % m == 0)
+			cout << i << endl;
+	}
+}
