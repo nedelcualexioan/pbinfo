@@ -97,12 +97,12 @@ namespace pbinfoApp.Panels
             {
                 Parent = pnlSolution,
                 Multiline = true,
-                Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                 Font = new Font("Lucida Sans Unicode", 11.25f, FontStyle.Regular),
                 Location = new Point(0, 0),
                 BorderStyle = BorderStyle.None,
                 Enabled = false,
-                Size = new Size(pnlSolution.Width, 700),
+                Size = new Size(pnlSolution.Width, 600),
                 Text = File.ReadAllText(path + @"\rezolvare.txt"),
                 BackColor = Color.White
             };

@@ -2,6 +2,7 @@ Se considera declararile de mai jos, in care variabila e memoreaza numele si dat
 
 struct data
 {int zi, luna, an;};
+
 struct elev
 {
 	char nume[21];
